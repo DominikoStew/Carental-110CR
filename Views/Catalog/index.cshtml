@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Catalog";
+}
+
+
+@section Styles {
+    <link href="/css/catalog/index.css" rel="stylesheet">
+}
+
+<h2>Catalog page</h2>
+
+<div id="catalog-container">
+
+
+<div id="popup" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-x1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="md1Title" class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div id="md1Content" class="modal-body">
+    
+      </div>
+
+      <div id="md1Info" class="modal-body">
+          <label>Category </label> <label id="md1Cat"></label>
+          <label>Transmission </label> <label id="md1Trans"></label>
+
+          <br>
+        </div>
+
+      <div class="modal-footer">
+          <div class="price-container">
+            <label>Price </label>
+            <label id="md1Price"></label>
+            </div>
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+@section Scripts {
+    <script src="/js/catalog/index.js"></script>
+}
